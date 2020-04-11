@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Redirect</title>
+</head>
+<body>
+    <script>
+
+//Get Location 
+var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    alert("Geolocation is not supported by this browser.");
+  }
+}
+
+//Get Position
+function showPosition(position) {
+var lat = position.coords.latitude;
+var long = position.coords.longitude;
+
+    alert("Your position is "lat" + "long");
+}
+
+// redirect
+function {
+
+    if(lat > && long < ) {
+    window.location.href = "eastern.html";
+}
+    else {
+    window.location.href = "western.html"
+    }
+}
+
+// user OS device
+If a Mac user
+    if {
+alert("Welcome, Mac User!");
+getLocation ()
+}  
+
+If a Windows {}
+    else
+alert("Welcome, Windows User!");
+getLocation ()
+}
+
+
+</script>
+
+
+    
+</body>
+</html>
